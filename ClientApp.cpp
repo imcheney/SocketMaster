@@ -10,6 +10,10 @@
 #define FILE_NAME_MAX_SIZE 512
 
 /**
+ * 需要使用的recv和send操作范例:
+ * length = recv(new_server_socket, buffer, BUFFER_SIZE, 0);  // received client-msg is stored in buffer
+ * length = send(new_server_socket, buffer, sizeof(buffer), 0);  // send server-msg in buffer to client
+ * 我们总是默认client发第一个消息(比如发用户名过来), 然后server进行答复或者提问
  * 实现这个函数中的业务逻辑即可
  * @param master
  * @return
