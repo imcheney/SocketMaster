@@ -1,0 +1,4 @@
+ClientServerTemplate V1.0
+#使用方法
+修改ClientApp的clientWork函数, 修改ServerApp的serverWork函数, 实现自己的业务逻辑.
+SocketMaster集成了Client和Server进行socket连接和关闭所需要的操作.
